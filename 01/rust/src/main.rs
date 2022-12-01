@@ -23,6 +23,10 @@ fn main() {
         }
     }
 
+    if curr_elf != 0 {
+        elves_calories_sum.push(curr_elf);
+    }
+
     let highest_in_the_room = *elves_calories_sum.iter().max().unwrap();
 
     elves_calories_sum.sort();
